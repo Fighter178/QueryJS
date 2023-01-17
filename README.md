@@ -49,7 +49,7 @@ Binding like this watches for all input, user or not. Be aware of this. Using bi
 ### Showing Data
 If you wanted to show the user some data, use the syntax `{expression}`. Doing this inside of braces allows you to execute JavaScript within HTML. If the user doesn't have JS enabled, then it won't work. If you want to escape braces, use `\{}`. This escapes it. Renders `{}` to the screen. To do this, it requires an element to have the data attribute `data-template="true"` on it, and of course an id.
 #### Example: 
-*note that unlike most other attributes, data binding doesn't require an ID anymore.
+*note that unlike most other attributes, templates doesn't require an ID anymore.
 ```html
 <p data-template>{1+2}></p>
 ``` 
