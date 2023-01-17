@@ -13,7 +13,7 @@ The library that works like a framework, but isn't. One single JS file, giving y
  - Backend framework (eg. Sveltekit)
 ## Data attributes
 ### Binding data
-To bind data, use the `data-qj-bind="[variableName]"` syntax.
+To bind data, use the `data-bind="[variableName]"` syntax.
 All elements that want to leverage QueryJS, must have an id, though it can be anything that isn't null. 
 #### For example,
 if I wanted to bind the value of the input below, this would work:
