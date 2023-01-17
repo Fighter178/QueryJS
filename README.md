@@ -12,9 +12,13 @@ The library that works like a framework, but isn't. One single JS file, giving y
  - Form Actions
  - Backend framework (eg. Sveltekit)
 ## Install
-To install QueryJS, use the CDN (a Node package will come soon)
+To install QueryJS, use the CDN:
 ```html
 <script src="https://cdn.jsdelivr.net/gh/Fighter178/QueryJS/qj.min.js" integrity="sha512-SdmGVkl4uiea7nXSFzQ0Eo45QlBiyhDgouJRtsHDbvZW99SmPyS6wEpE7bHf4XkU7ycvGmUiCQ7CqPK7NOUssw==" crossorigin="anonymous"></script>
+```
+Or, via NPM:
+```
+npm i @fighter178/queryjs
 ```
 ## Data attributes
 ### Binding data
@@ -140,4 +144,3 @@ This updates the counter.
 ## Writing aliases
 Some QueryJS functions have aliases. However, if you want to write your own alias, then you can use the `Qj.alias` function.
 You should use this, and not extend the Qj object itself. Qj.alias checks to make sure that an alias isn't already being used, unless safe=false. 
-
