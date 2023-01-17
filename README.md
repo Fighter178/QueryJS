@@ -11,6 +11,11 @@ The library that works like a framework, but isn't. One single JS file, giving y
  - Good Docs
  - Form Actions
  - Backend framework (eg. Sveltekit)
+## Install
+To install QueryJS, use the CDN (a Node package will come soon)
+```html
+<script src="https://cdn.jsdelivr.net/gh/Fighter178/QueryJS/qj.min.js" integrity="sha512-SdmGVkl4uiea7nXSFzQ0Eo45QlBiyhDgouJRtsHDbvZW99SmPyS6wEpE7bHf4XkU7ycvGmUiCQ7CqPK7NOUssw==" crossorigin="anonymous"></script>
+```
 ## Data attributes
 ### Binding data
 To bind data, use the `data-bind="[variableName]"` syntax.
