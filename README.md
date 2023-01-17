@@ -37,7 +37,7 @@ Note, that any variable that is stored by QJ, will and must be in the `Qj.vars`o
 Binding like this watches for all input, user or not. Be aware of this. Using binding works on inputs, textareas, etc.
 
 ### Showing Data
-If you wanted to show the user some data, use the syntax `{expression}`. Doing this inside of braces allows you to execute JavaScript within HTML. If the user doesn't have JS enabled, then it won't work. If you want to escape braces, use `\{}`. This escapes it. Renders `{}` to the screen. To do this, it requires an element to have the data attribute `data-qj-template="true"` on it, and of course an id.
+If you wanted to show the user some data, use the syntax `{expression}`. Doing this inside of braces allows you to execute JavaScript within HTML. If the user doesn't have JS enabled, then it won't work. If you want to escape braces, use `\{}`. This escapes it. Renders `{}` to the screen. To do this, it requires an element to have the data attribute `data-template="true"` on it, and of course an id.
 #### Example: 
 *note that unlike most other attributes, data binding doesn't require an ID anymore.
 ```html
@@ -49,25 +49,25 @@ Results in this being shown to the user:
 ```
 While this:
 ```html
-<p data-qj-template>\{1+2}</p>
+<p data-template>\{1+2}</p>
 ```
 Gives:
 ```html
 {1+2}
 ```
-on the screen despite `data-qj-template` being set to true.
+on the screen despite `data-template` being set to true.
 This works with multiple templates, without limit.
 Sadly, this is not reactive, though you can use the render function to help.
 #### Executing in the Global Scope (WIP)
 By default, a template is executed in its own scope. If you need to execute it in the global scope, then do this:
-`data-qj-template-scope="global"`.
+`data-template-scope="global"`.
 You could also put any scope defined in the global scope here, like a custom scope:
 ```js
 myScope: {
     let i=0;
 }
 ```
-Then use `data-qj-template-scope="myScope"`
+Then use `data-template-scope="myScope"`
 
 ### Qj.render Function
 As mentioned above, templates aren't reactive, so you'll need to use this function to make them. 
