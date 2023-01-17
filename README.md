@@ -20,6 +20,7 @@ Or, via NPM:
 ```
 npm i @fighter178/queryjs
 ```
+*note that QueryJS uses the document, and so it won't run in Node. Use import syntax instead of "require".
 ## Data attributes
 ### Binding data
 To bind data, use the `data-bind="[variableName]"` syntax.
